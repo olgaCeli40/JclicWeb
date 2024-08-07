@@ -1,0 +1,2655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="computacionbasica" version="0.1.3">
+ <settings>
+  <title>ComputacionBasica</title>
+  <revision description="created" date="1/26/24" />
+  <author name="Olga Maribel Celi" mail="olga.celi@istjm.edu.ec" rol="Profesora" organization="ISTJM Loja" />
+  <description>
+   <p>Computacion Básica </p>
+  </description>
+  <descriptors level-codes="PRI" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>Computacion Básica </p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="Start" name="InfoPortada" />
+  <item id="INDICE" name="Indice">
+   <jump tag="JUEGOS" id="forward" />
+   <jump tag="GALERIA" id="back" />
+  </item>
+  <item name="Indice1">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Indice2" />
+  <item name="Indice3" />
+  <item name="Indice4" />
+  <item name="Indice5" />
+  <item name="Indice6" />
+  <item name="Indice7" />
+  <item name="Indice8" />
+  <item name="Indice9" />
+  <item name="Indice10" />
+  <item name="Indice11" />
+  <item name="Indice12" />
+  <item name="Indice13" />
+  <item name="Indice14" />
+  <item name="Indice15" />
+  <item name="Indice16" />
+  <item name="Indice17" />
+  <item name="Indice18" />
+  <item name="Indice19" />
+  <item name="Indice20" />
+  <item name="Indice21" />
+  <item name="Indice22" />
+  <item name="Indice23" />
+  <item name="Indice24" />
+  <item name="Indice25" />
+  <item name="Indice26">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item id="JUEGOS" name="JUEGOS">
+   <jump tag="EVALUACIONES" id="forward" />
+   <jump tag="INDICE" id="back" />
+  </item>
+  <item name="JuegoPort" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="PortaJuegoRompe1" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Rompecabezas">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JuegoPortaRompe2" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="RompeCabezas2">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JugoPortaMe" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JuegoMemoria">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JugoPortaCrucigrama" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="crucigrama">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JurgoPortaRompe3" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="RompeCabezas3">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JuegoPortadaSopa" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="SopadeLetras">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JuegoPortadaAsociCom" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="AsociaciónCompleja">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="JuegoPortadaExpl" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Exploracion">
+   <jump tag="JUEGOS" id="forward" />
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="EVALUACIONES" name="EVALUACIONES">
+   <jump tag="GALERIA" id="forward" />
+   <jump tag="JUEGOS" id="back" />
+  </item>
+  <item name="EvaluacionesSec" navButtons="back">
+   <jump tag="GALERIA" id="forward" />
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Evaluacion1">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Evaluacion2" />
+  <item name="Evaluacion3" />
+  <item name="RespuestaEscrita" />
+  <item name="IdentificarElementos" />
+  <item name="FuncionComponentes" />
+  <item name="OrdenarElementos">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item id="GALERIA" name="GALERIA">
+   <jump tag="INDICE" id="forward" />
+   <jump tag="EVALUACIONES" id="back" />
+  </item>
+  <item name="galeria1">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="galeria2" />
+  <item name="galeria3" />
+  <item name="galeria4" />
+  <item name="galeria5" />
+  <item name="galeria6" />
+  <item name="galeria7" />
+  <item name="galeria8" />
+  <item name="galeria9" />
+  <item name="galeria10" />
+  <item name="galeria11" />
+  <item name="galeria12" />
+  <item name="galeria13" />
+  <item name="galeria14" />
+  <item name="galeria15" />
+  <item name="galeria16">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="AsociaciónCompleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Bienvenido, Asocia las imágenes a la parte que corresponda </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x00FF33" />
+     </style>
+     <p>¡Felicitaciones! Lo has hecho excelente.</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFF0033" />
+     </style>
+     <p>Lo sentimos, parece que tu tiempo o número de intentos han terminado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="70" countDownTime="false" maxActions="25" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="3" cellWidth="182.0" cellHeight="136.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="monitor.jpg" />
+    <cell id="0" image="mousepc-resized.jpg" />
+    <cell id="0" image="teclado2-resized.jpg" />
+    <cell id="1" image="ram.jpg" />
+    <cell id="1" image="procesador-resized.jpg" />
+    <cell id="1" image="DiscoDuro-resized.jpg" />
+    <cell id="0" image="bosinaspc.jpg" />
+    <cell id="1" image="fuentepoder.jpg" />
+    <cell id="1" image="placamadre-resized.jpg" />
+    <cell id="1" image="conectores-resized.jpg" />
+    <cell id="0" image="Case2-resized.jpg" />
+    <cell id="1" image="gpu.jpg" />
+   </cells>
+   <cells rows="1" cols="2" cellWidth="156.0" cellHeight="59.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <p>Parte Externa</p>
+    </cell>
+    <cell>
+     <p>Parte Interna</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="EVALUACIONES" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xF0F0F0" background="0xFF9900" />
+     </style>
+     <p>Evaluaciones</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="391.0" cellHeight="291.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0xFFCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="EvaluacionesSec" />
+     <p>Ver Evaluaciones</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0xFF3366" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="InfoPortada" />
+     <p>Ir Menu Principal</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Evaluacion1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Escribe el nombre de los componentes  externos segun corresponda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x66CC00" />
+     </style>
+     <p>Te felicito, lo has hecho muy bien.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x003333" background="0xFF3333" />
+     </style>
+     <p>El tiempo ha expirado o se ha superado el número de intentos permitidos. Por favor, inténtelo nuevamente.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" maxActions="8" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="264.0" cellHeight="265.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" image="tecladopc.jpg" />
+    <cell id="1" image="case.png" />
+    <cell id="2" image="monitor.jpg" />
+    <cell id="3" image="bosinaspc.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="165.0" cellHeight="109.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Teclado</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Case</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Monitor</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Bocinas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Evaluacion2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Empareja los componentes internos según corresponda.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" />
+      <color background="0x33FF33" />
+     </style>
+     <p>¡Te felicito! Has emparejado los componentes internos de forma exitosa.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x003333" background="0xFF3333" />
+     </style>
+     <p>El tiempo ha expirado o se ha superado el número de intentos permitidos. Por favor, inténtelo nuevamente.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="474.0" cellHeight="131.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell image="procesador-resized.jpg" />
+    <cell image="gpu.jpg" />
+    <cell image="fuentepoder.jpg" />
+    <cell image="placamadre-resized.jpg" />
+    <cell image="ram.jpg" />
+    <cell image="DiscoDuro-resized.jpg" />
+   </cells>
+   <cells rows="6" cols="1" cellWidth="465.0" cellHeight="131.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <gradient source="0x66FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Procesador</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Gpu</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <gradient source="0x3300CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Fuente de poder</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <gradient source="0xFF0099" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Placa Madre</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>RAM</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color background="0x669900" />
+      <gradient source="0x3300CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Disco Duro</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Evaluacion3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Selecciona 3 Sistemas Operativos más usados en las Computadoras</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0x33CC00" />
+     </style>
+     <p>Bien echo lo lograste con exito.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x003333" background="0xFF0033" />
+     </style>
+     <p>El tiempo ha expirado o se ha superado el número de intentos permitidos. Por favor, inténtelo nuevamente.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="false" maxActions="6" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="399.0" cellHeight="350.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" image="android.jpg" />
+    <cell id="0" image="ChromeOS.png" />
+    <cell id="1" image="windows-resized.jpg" />
+    <cell id="1" image="linux-resized.jpg" />
+    <cell id="0" image="IoS.jpg" />
+    <cell id="1" image="mac-resized.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="EvaluacionesSec" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Bienvenido a la sección de Evaluaciones.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <helpWindow>
+     <p>Hola</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x00CCFF" dest="0x0033CC" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="238.0" cellHeight="85.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Evaluacion1" />
+     <p>Evaluación 1</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Evaluacion2" />
+     <p>Evaluación 2</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Evaluacion3" />
+     <p>Evaluación 3</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="RespuestaEscrita" />
+     <p>Evaluación 4</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="IdentificarElementos" />
+     <p>Evaluación 5</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3333FF" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="FuncionComponentes" />
+     <p>Evaluación 6</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="59" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="OrdenarElementos" />
+     <p>Evaluación 7</p>
+    </cell>
+    <cell />
+   </cells>
+  </activity>
+  <activity class="@panels.Explore" name="Exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Explora y da clic en las imágenes para visualizar su información.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x00FF00" />
+     </style>
+     <p>¡Felicitaciones! Has completado la actividad con éxito.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xCC0033" />
+     </style>
+     <p>El tiempo o numero de intentos se han agotado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="3" cellWidth="237.0" cellHeight="165.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell id="0" image="case.png" />
+    <cell id="1" image="DiscoDuro-resized.jpg" />
+    <cell id="2" image="gpu.jpg" />
+    <cell id="3" image="monitor.jpg" />
+    <cell id="4" image="ram.jpg" />
+    <cell id="5" image="windows-resized.jpg" />
+    <cell id="6" image="linux-resized.jpg" />
+    <cell id="7" image="mac-resized.jpg" />
+    <cell id="8" image="mousepc-resized.jpg" />
+    <cell id="9" image="placamadre-resized.jpg" />
+    <cell id="10" image="procesador-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+     </style>
+    </cell>
+    <cell id="11" image="fuentepoder.jpg" />
+    <cell id="12" image="bosinaspc.jpg" />
+    <cell id="13" image="tecladopc.jpg" />
+    <cell id="14" image="conectores-resized.jpg" />
+   </cells>
+   <cells rows="15" cols="1" cellWidth="454.0" cellHeight="55.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="15" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Case</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Disco Duro</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Gpu</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Monitor</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Ram</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Windows</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Linux</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Mac</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Mouse</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Placa Madre</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Procesador</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Fuente de Poder</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Bocinas</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Teclado</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FFFF" />
+     </style>
+     <p>Conectores</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="FuncionComponentes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xF0F0F0" background="0x3333FF" />
+     </style>
+     <p>Observa la imagen y únelo con el texto correspondiente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x66FF00" />
+     </style>
+     <p>¡Felicitaciones! Has completado la actividad con éxito.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFF0066" />
+     </style>
+     <p>Lo sentimos, el tiempo o número de intentos se han agotado. </p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="70" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="516.0" cellHeight="129.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell image="monitor.jpg" />
+    <cell image="case.png" />
+    <cell image="computadora-resized.jpg" />
+    <cell image="DiscoDuro-resized.jpg" />
+    <cell image="gpu.jpg" />
+    <cell image="procesador-resized.jpg" />
+   </cells>
+   <cells rows="6" cols="1" cellWidth="1087.0" cellHeight="82.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>Visualiza todo lo que se realiza en las compuadora</p>
+    </cell>
+    <cell>
+     <p>Aloja todos los componentes internos del computador.</p>
+    </cell>
+    <cell>
+     <p>Equipo electrónico que nos permite realizar tareas de manera automática y eficaz. </p>
+    </cell>
+    <cell>
+     <p>Componente interno que nos permite la instalación y ejecución del sistema operativo.</p>
+    </cell>
+    <cell>
+     <p>Encargada de enviar y trasformar los datos para visualizarlos en el monitor.</p>
+    </cell>
+    <cell>
+     <p>Unidad central de procesamiento de un computador</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="GALERIA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x339900" />
+     </style>
+     <p>Galeria</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="433.0" cellHeight="286.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <gradient source="0x339900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="galeria1" />
+     <p>Ver Galeria</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="InfoPortada" />
+     <p>Ir Menu Principal</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Identify" name="IdentificarElementos" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xF0F0F0" background="0x0000FF" />
+     </style>
+     <p>Dar un clic en el nombre de los componentes que identifiques en el texto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xF0F0F0" background="0x00CC33" />
+     </style>
+     <p>¡Felicitaciones! Has logrado encontrar con éxito todas las palabras. Puedes seguir con otra actividad.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0000" />
+     </style>
+     <p>Lo sentimos el tiempo o el número de intentos se han agotado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="240" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0x66CCFF" border="true">
+     <size width="999" height="500" />
+    </window>
+    <eventSounds>
+     <sound id="start" file="bienvenido.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xFFFFFF" />
+    <style name="default" family="Arial" background="0x00CCFF" size="28" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0x00CCFF" size="28" bold="false" italic="false" />
+     <p family="Arial" background="0x00CCFF" size="28" bold="false" italic="false">
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false">"El  computador  moderno es una maravilla de la ingeniería digital. Su carcasa conocido cono </text>
+      <target>Case,</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> a menudo hecha de plástico resistente o aluminio elegante, protege los componentes internos delicados. En la parte frontal, se encuentran los puertos USB que permiten la conexión de dispositivos periféricos como </text>
+      <target>teclados,</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> </text>
+      <target>ratones</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> y unidades de almacenamiento externas como USB, </text>
+      <target>Discos</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> Duros externos. Junto a estos, los botones de encendido y reset proporcionan acceso rápido para controlar el estado del sistema. En la parte trasera, encontramos una variedad de conexiones, desde puertos de video para conectar </text>
+      <target>monitores</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> hasta tomas de audio para </text>
+      <target>bocinas</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> y </text>
+      <target>micrófonos.</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> Además, las ranuras de expansión permiten la instalación de tarjetas adicionales, como tarjetas de red o tarjetas gráficas </text>
+      <target>(GPU),</target>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false"> para mejorar la funcionalidad del sistema. La fuente de poder es quien subministra energia a todos los componentes.</text>
+     </p>
+     <p family="Arial" background="0x00CCFF" size="28" bold="false" italic="false" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xF0F0F0" background="0x0033FF" />
+     </style>
+     <p>Indice, lee e informate.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="405.0" cellHeight="254.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x000033" background="0x0033FF" />
+      <gradient source="0x0000FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Indice1" />
+     <p>Ver indice</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0x000033" background="0xFF0099" />
+      <gradient source="0xFF0066" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="InfoPortada" />
+     <p>Ir menu Principal</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice1" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice1-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="left,top" border="false">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" />
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice10" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice10-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice11" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice11-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice12" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice12-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice13" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice13-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice14" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice14-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice15" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice15-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice16" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice16-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice17" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice17-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice18" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice18-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice19" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice19-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice2" code="">
+   <description />
+   <messages />
+   <settings margin="0" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xF0F0F0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice2-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" txtAlign="right,middle" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice20" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice20-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice21" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice21-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice22" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice22-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice23" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice23-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice24" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice24-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice25" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice25-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice26" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice26-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice3" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice3-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice4" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="803.0" cellHeight="440.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="indice4-resized.jpg" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice5" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="805.0" cellHeight="440.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="indice5-resized.jpg" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice6" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="801.0" cellHeight="390.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="indice6-resized.jpg" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice7" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice7-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice8" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice8-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Indice9" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="indice9-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="InfoPortada" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="848.0" cellHeight="131.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>En el índice encontraras la parte teórica con los conceptos de la computación básica, describiendo cada de las partes que conforman el computador, para ver la teoría puedes presionar en el botón índice.</p>
+    </cell>
+    <cell id="1" txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FF00" />
+     </style>
+     <p>En esta sección encontraras los juegos que puedes ejecutar para aprender de forma divertida lo relacionado con la computación cada juego tiene su indicación antes de ejecutarlo para que se te haga más fácil realizarlo, para ir a esta sección presiona el botón Juegos.</p>
+    </cell>
+    <cell id="2" txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x9999FF" />
+     </style>
+     <p>En evaluaciones encontraras unas actividades en las cuales tu puedes desarrollar para evaluar tus conocimientos, son actividades sencillas pensadas para facilitar el aprendizaje de los conceptos básicos de la computación, para ir a esta sección presiona el botón Evaluaciones.</p>
+    </cell>
+    <cell id="3" txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFF0099" />
+     </style>
+     <p>En esta sección encontrarás algunas imágenes de componentes que conforman una computadora y que son útiles para que esta funcione. Esta actividad tiene como fin que el alumno pueda observare de forma nítida los componentes y así pueda reconocerlos cuando vea un componente de estos en la vida real.</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="192.0" cellHeight="131.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x3366FF" />
+      <gradient source="0x3366FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Indice" />
+     <p>Indice</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x33FF00" />
+      <gradient source="0x33FF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JUEGOS" />
+     <p>Juegos</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x9999FF" />
+      <gradient source="0x9999FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="EVALUACIONES" />
+     <p>Evaluaciones</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFF0099" />
+      <gradient source="0xFF0099" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="GALERIA" />
+     <p>Galeria</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="JUEGOS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <gradient source="0x33CC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Juegos</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="472.0" cellHeight="274.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <gradient source="0x66FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoPort" />
+     <p>Ver Juegos</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <gradient source="0xCC0066" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="InfoPortada" />
+     <p>Ir Menu Principal</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="JuegoMemoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xFFFFFF" background="0x0033CC" />
+     </style>
+     <p>Encuentra los pares de imágenes que sean iguales.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x33CC00" />
+     </style>
+     <p>Felicitaciones, has completado el juego exitosamente. ¡Excelente trabajo</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0xCC0000" />
+     </style>
+     <p>Has fallado intenta de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x3333FF" dest="0xFF3333" angle="0" />
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="251.0" cellHeight="179.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="computadora-resized.jpg" />
+    <cell image="gpu.jpg" />
+    <cell image="monitor.jpg" />
+    <cell image="procesador-resized.jpg" />
+    <cell image="tecladopc.jpg" />
+    <cell image="mac-resized.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="JuegoPort" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xF0F0F0" background="0x669900" />
+     </style>
+     <p>Selecciona un Juego para Jugar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="399.0" cellHeight="153.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0x339900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="PortaJuegoRompe1" />
+     <p>Rompecabezas</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0x660033" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoPortaRompe2" />
+     <p>Rompecabezas 2</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0x006666" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JugoPortaMe" />
+     <p>Jueego Memoria</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0x660033" dest="0xFFFFFF" angle="36" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JugoPortaCrucigrama" />
+     <p>Crucigrama</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0x3300CC" dest="0xFFFFFF" angle="113" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JurgoPortaRompe3" />
+     <p>Rompecabezas 3</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0xFF0099" dest="0xFFFFFF" angle="160" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoPortadaSopa" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <gradient source="0xFF6600" dest="0xFFFFFF" angle="208" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoPortadaAsociCom" />
+     <p>Asociación Compleja</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <gradient source="0x009999" dest="0xFFFFFF" angle="45" cycles="2" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoPortadaExpl" />
+     <p>Exploración</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JuegoPortaRompe2" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="444.0" cellHeight="219.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO ROMPECABEZAS 2</p>
+     <p>En un solo panel el alumno debe mover las piezas desordenadas una con otra hasta ordenar la imagen de forma correcta, pulsa el botón Ir al Juego para jugar.</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="112.0" cellHeight="48.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="RompeCabezas2" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JuegoPortadaAsociCom" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="503.0" cellHeight="297.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO DE ASOCIACIÓN COMPLEJA</p>
+     <p>El usuario en los dos paneles que se presentan debe visualizar las imágenes e identificar si pertenece a una parte externa o interna del computador </p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="112.0" cellHeight="59.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AsociaciónCompleja" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JuegoPortadaExpl" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="437.0" cellHeight="305.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO EXPLORACIÓN</p>
+     <p>El usuario  debe dar clic en las imágenes para que pueda visualizar la información correspondiente a la imagen que se haya seleccionado, información que se presentara en un segundo panel, pulsa en el botón Ir al Juego para jugar </p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="123.0" cellHeight="63.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Exploracion" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JuegoPortadaSopa" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="464.0" cellHeight="309.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO SOPA DE LETRAS</p>
+     <p>El usuario debe identificar en la sopa de letras el nombre de las partes internas del computador que se encuentran ocultas,  una vez marcada la palabra se visualizará la imagen correspondiente a la parte que a marcado.</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="108.0" cellHeight="45.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SopadeLetras" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JugoPortaCrucigrama" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="416.0" cellHeight="304.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO DE CRUCIGRAMA</p>
+     <p>El alumno dentro de una variedad de letras aleatorias debe encontrar las palabras con los nombres de algunos componentes de una computadora, pulsa ir al Juego para jugar.</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="154.0" cellHeight="51.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="crucigrama" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JugoPortaMe" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="428.0" cellHeight="374.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO DE MEMORIA</p>
+     <p>El alumno debe dar clic en cada cuadro del panel en las cuales se encuentran imágenes ocultas y debe ir memorizando para que queden visibles cada vez que encuentra las dos imágenes iguales, pulsa en Ir al Juego para jugar</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="145.0" cellHeight="54.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="JuegoMemoria" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JurgoPortaRompe3" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="444.0" cellHeight="312.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO ROMPECABEZAS 3</p>
+     <p>El alumno en esta actividad en un solo panel debe mover las piezas de una imagen que presenta algunas partes externas del computador haciendo uso del agujero que deja la pieza que se coloca el costado, la cual una vez ordenada las demás se colocara automáticamente en su posición correcta, pulsa Ir al Juego para jugar.</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="132.0" cellHeight="46.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="RompeCabezas3" />
+     <p>Ir al Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="OrdenarElementos" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Ordena la palabra a la cual corresponda cada concepto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color background="0x00FF00" />
+     </style>
+     <p>¡Felicitaciones! Has completado la actividad con éxito.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="26" bold="true" />
+      <color background="0xCC0066" />
+     </style>
+     <p>El tiempo o numero de intentos se han agotado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="70" countDownTime="false" maxActions="6" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="579" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xFFFFFF" />
+    <style name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12">
+      <target>Software</target>
+      <text family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" foreground="0x000000">: Conjunto de programas, datos y órdenes que permiten el funcionamiento de un sistema informático y facilitan la ejecución de tareas específicas</text>
+      <text family="Arial" background="0x00CCFF" size="28" bold="false" italic="false" foreground="0x000000">.</text>
+     </p>
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12" />
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12">
+      <target>hardware</target>
+      <text family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" foreground="0x000000">: Componentes físicos de un sistema informático, incluyendo dispositivos como la CPU, memoria, unidades de almacenamiento, periféricos, etc., que interactúan entre si para realizar tareas.</text>
+     </p>
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12" />
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12">
+      <text family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" foreground="0x000000">Los </text>
+      <target>drivers</target>
+      <text family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" foreground="0x000000">, también conocidos como controladores, son programas informáticos que permiten que el sistema operativo y el hardware interactúen adecuadamente. Actúan como traductores entre el software y los dispositivos físicos, facilitando la comunicación y asegurando que el hardware funcione correctamente con el sistema operativo.</text>
+     </p>
+     <p name="default" family="Arial" background="0x66CCFF" size="28" bold="false" italic="false" tabWidth="12" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="PortaJuegoRompe1" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="446.0" cellHeight="412.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style margin="7" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0x333333" background="0x66FFFF" />
+     </style>
+     <p>JUEGO DE ROMPECABEZAS</p>
+     <p>El alumno debe mover las piezas de la Imagen de un panel a otro hasta ordenarlas y formar la imagen correcta con las partes de la computadora, pulsa en el botón ir al juego para jugar</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="124.0" cellHeight="49.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rompecabezas" />
+     <p>Ir Juego</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="RespuestaEscrita" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>De acuerdo con los conceptos, escribir la palabra que corresponda de forma ordenada.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x339900" />
+     </style>
+     <p>Excelente has colocado el nombre de una forma correcta puedes salir y seguir con otra actividad.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xCC0033" />
+     </style>
+     <p>Lo sentimos el tiempo o el número de intentos han terminado. Inténtalo de nuevo.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="239.0" cellHeight="199.0" border="true" id="primary">
+    <style>
+     <color background="0xCCFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>El monitor es un dispositivo de salida que muestra información gráfica las acciones que el usuario realiza.</p>
+    </cell>
+    <cell id="1">
+     <p>Dispositivo de entrada que permite a los usuarios interactuar con una computadora mediante movimientos y clics, facilitando la navegación y el control sobre elementos en la pantalla mediante un cursor.</p>
+    </cell>
+    <cell id="2">
+     <p>Estructura que aloja y protege los componentes internos de la computadora, además de proporcionar conexiones para los dispositivos externos necesarios para su funcionamiento</p>
+    </cell>
+    <cell id="3">
+     <p> Dispositivos de salida que reproducen sonido desde una computadora u otro dispositivo electrónico.</p>
+    </cell>
+    <cell id="4">
+     <p>Dispositivo de entrada para introducir texto y comandos en una computadora o dispositivo electrónico</p>
+    </cell>
+    <cell id="5">
+     <p>Es uno de los sistemas operativos más utilizados en el mundo y está diseñado para su ejecución en computadoras personales, dispositivos móviles, servidores y otros dispositivos.</p>
+    </cell>
+    <cell id="6">
+     <p>El software se refiere a programas que operan en una computadora y, en colaboración con el hardware, permite al usuario interactuar de manera efectiva con el equipo</p>
+    </cell>
+    <cell id="7">
+     <p>Es la parte física de la computadora, que incluye todos los componentes tangibles como la cpu, la memoria ram, el disco duro, la tarjeta madre, la tarjeta de video, la fuente de poder, etc.</p>
+    </cell>
+    <cell id="8">
+     <p>Proporciona la energía eléctrica necesaria para que todos los demás componentes funcionen.</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="202.0" cellHeight="108.0" border="true" id="answers">
+    <style>
+     <color background="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>Monitor</p>
+    </cell>
+    <cell>
+     <p>Mouse</p>
+    </cell>
+    <cell>
+     <p>Case</p>
+    </cell>
+    <cell>
+     <p>Bocinas</p>
+    </cell>
+    <cell>
+     <p>Teclado</p>
+    </cell>
+    <cell>
+     <p>Windows</p>
+    </cell>
+    <cell>
+     <p>Software</p>
+    </cell>
+    <cell>
+     <p>Hardware</p>
+    </cell>
+    <cell>
+     <p>Fuente de poder</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="RompeCabezas2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Ordena las partes de la imagen hasta dejarlas en posición correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x00FF00" />
+     </style>
+     <p>¡Felicitaciones! Lo hiciste excelente.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCC0099" />
+     </style>
+     <p>Lo sentimos, parece que el tiempo o el numero de intentos han terminado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="computadora-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="RompeCabezas3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>Ordene las piezas de las partes Externas de un computador.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x00CC00" />
+     </style>
+     <p>¡Felicitaciones! has logrado ordenar las piezas con éxito.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0033" />
+     </style>
+     <p>Lo sentimos el tiempo o el numero de intentos se han agotado.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="partExternas-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Rompecabezas" code="">
+   <description>
+    <p>Rompecabezas de partes de un compudador</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Ordena el rompecabezas con las partes principales de un Computador.</p>
+    </cell>
+    <cell imgAlign="right,top" image="compu.png" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x33CC00" />
+     </style>
+     <p>!Felicidades lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xF0F0F0" background="0xFF0033" />
+     </style>
+     <p>Has fallado intenta de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="60" countDownTime="false" maxActions="20" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="partespc-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SopadeLetras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Encuentra las 6 palabras con las partes Internas del computador y visualiza la imagen correspondiente</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x339900" />
+     </style>
+     <p>Excelente, has encontrado todas las palabras. ¡Ahora puedes salir y seguir con otro juego</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCC0066" />
+     </style>
+     <p>El tiempo o el número de intentos ha terminado. Inténtalo de nuevo.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="11" columns="13" cellWidth="60.0" cellHeight="49.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>FPNITOR*P**</row>
+     <row>UER****SF*P</row>
+     <row>EHIO**A*A*L</row>
+     <row>N***CN**C*A</row>
+     <row>T***IE**F*C</row>
+     <row>EE*CASS*R*A</row>
+     <row>D*O****AA*M</row>
+     <row>EBDISCO*D*A</row>
+     <row>P*******TOD</row>
+     <row>O**R****W*R</row>
+     <row>D**A******E</row>
+     <row>E**M**GPU**</row>
+     <row>R**********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">FUENTEDEPODER</clue>
+    <clue id="1">PLACAMADRE</clue>
+    <clue id="2">DISCO</clue>
+    <clue id="3">PROCESADOR</clue>
+    <clue id="4">RAM</clue>
+    <clue id="5">GPU</clue>
+   </clues>
+   <cells rows="2" cols="3" cellWidth="163.0" cellHeight="117.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="fuentepoder.jpg" />
+    <cell image="placamadre-resized.jpg" />
+    <cell image="DiscoDuro-resized.jpg" />
+    <cell image="procesador-resized.jpg" />
+    <cell image="ram.jpg" />
+    <cell image="gpu.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="crucigrama" code="" inverse="true">
+   <description>
+    <p>econtrar nombre de las partes de PC</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Ecuentra las 8 palabras con los nombres de las partes de un Computador</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <p>Muy bien, lo has logrado. ¡Felicidades!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xF0F0F0" background="0xFF0033" />
+     </style>
+     <p>Has fallado intenta de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="150" countDownTime="false" maxActions="16" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="30" columns="10" cellWidth="50.0" cellHeight="90.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>MOUSE*************************</row>
+     <row>D*T****MONITOR**GPU***********</row>
+     <row>GHE***************************</row>
+     <row>**C*****CASE******************</row>
+     <row>**L*****PROCESADOR************</row>
+     <row>**A*****U********A************</row>
+     <row>**D**************M************</row>
+     <row>**O***************************</row>
+     <row>**O***************************</row>
+     <row>******************************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PROCESADOR</clue>
+    <clue id="1">GPU</clue>
+    <clue id="2">RAM</clue>
+    <clue id="3">TECLADO</clue>
+    <clue id="4">MOUSE</clue>
+    <clue id="5">MONITOR</clue>
+    <clue id="6">CPU</clue>
+    <clue id="7">CASE</clue>
+   </clues>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>Monitor</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="monitor.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Windows</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="windows-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Linux</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="linux-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Mac</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="mac-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>GPU</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="gpu.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria14" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="partExternas-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria15" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="partInternas-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria16" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="conectores-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Case o Torre</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Case2-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>Teclado</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="teclado2-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Mouse</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="mousepc-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Placa Madre</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="placamadre-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Procesador</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="procesador-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>RAM</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="ram.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Disco Duro</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="DiscoDuro-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="galeria9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Fuente de Poder</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="fuentepoder.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="android.jpg" file="android.jpg" />
+  <media name="bosinaspc.jpg" file="bosinaspc.jpg" />
+  <media name="Case2-resized.jpg" file="case2-resized.jpg" />
+  <media name="computadora-resized.jpg" file="computadora-resized.jpg" />
+  <media name="conectores-resized.jpg" file="conectores-resized.jpg" />
+  <media name="DiscoDuro-resized.jpg" file="discoduro-resized.jpg" />
+  <media name="fuentepoder.jpg" file="fuentepoder.jpg" />
+  <media name="gpu.jpg" file="gpu.jpg" />
+  <media name="indice1-resized.jpg" file="indice1-resized.jpg" />
+  <media name="indice10-resized.jpg" file="indice10-resized.jpg" />
+  <media name="indice11-resized.jpg" file="indice11-resized.jpg" />
+  <media name="indice12-resized.jpg" file="indice12-resized.jpg" />
+  <media name="indice13-resized.jpg" file="indice13-resized.jpg" />
+  <media name="indice14-resized.jpg" file="indice14-resized.jpg" />
+  <media name="indice15-resized.jpg" file="indice15-resized.jpg" />
+  <media name="indice16-resized.jpg" file="indice16-resized.jpg" />
+  <media name="indice17-resized.jpg" file="indice17-resized.jpg" />
+  <media name="indice18-resized.jpg" file="indice18-resized.jpg" />
+  <media name="indice19-resized.jpg" file="indice19-resized.jpg" />
+  <media name="indice2-resized.jpg" file="indice2-resized.jpg" />
+  <media name="indice20-resized.jpg" file="indice20-resized.jpg" />
+  <media name="indice21-resized.jpg" file="indice21-resized.jpg" />
+  <media name="indice22-resized.jpg" file="indice22-resized.jpg" />
+  <media name="indice23-resized.jpg" file="indice23-resized.jpg" />
+  <media name="indice24-resized.jpg" file="indice24-resized.jpg" />
+  <media name="indice25-resized.jpg" file="indice25-resized.jpg" />
+  <media name="indice26-resized.jpg" file="indice26-resized.jpg" />
+  <media name="indice3-resized.jpg" file="indice3-resized.jpg" />
+  <media name="indice4-resized.jpg" file="indice4-resized.jpg" />
+  <media name="indice5-resized.jpg" file="indice5-resized.jpg" />
+  <media name="indice6-resized.jpg" file="indice6-resized.jpg" />
+  <media name="indice7-resized.jpg" file="indice7-resized.jpg" />
+  <media name="indice8-resized.jpg" file="indice8-resized.jpg" />
+  <media name="indice9-resized.jpg" file="indice9-resized.jpg" />
+  <media name="IoS.jpg" file="ios.jpg" />
+  <media name="linux-resized.jpg" file="linux-resized.jpg" />
+  <media name="mac-resized.jpg" file="mac-resized.jpg" />
+  <media name="monitor.jpg" file="monitor.jpg" />
+  <media name="mousepc-resized.jpg" file="mousepc-resized.jpg" />
+  <media name="partespc-resized.jpg" file="partespc-resized.jpg" />
+  <media name="partExternas-resized.jpg" file="partexternas-resized.jpg" />
+  <media name="partInternas-resized.jpg" file="partinternas-resized.jpg" />
+  <media name="placamadre-resized.jpg" file="placamadre-resized.jpg" />
+  <media name="procesador-resized.jpg" file="procesador-resized.jpg" />
+  <media name="ram.jpg" file="ram.jpg" />
+  <media name="teclado2-resized.jpg" file="teclado2-resized.jpg" />
+  <media name="tecladopc.jpg" file="tecladopc.jpg" />
+  <media name="windows-resized.jpg" file="windows-resized.jpg" />
+  <media name="bienvenido.mp3" file="bienvenido.mp3" />
+  <media name="case.png" file="case.png" />
+  <media name="ChromeOS.png" file="chromeos.png" />
+  <media name="compu.png" file="compu.png" />
+ </mediaBag>
+</JClicProject>
+
